@@ -1,6 +1,8 @@
 <div align="center">
 
-# ☀️ A lamp designed end to end by AI
+<img src="assets/icon.png" alt="Project icon" width="110">
+
+# A lamp designed end to end by AI
 
 **I gave the prompts. Claude did the rest through its tool connections: the PCB in KiCad, a parametric enclosure in Fusion 360, the renders, the print files and the PCB order files.**
 
@@ -277,9 +279,10 @@ Here's the full list of what I did myself:
 .
 ├── claude-x-kicad-x-fusion360.kicad_pro / .kicad_sch / .kicad_pcb   KiCad project
 ├── claude-x-kicad-x-fusion360.f3d                                   Fusion 360 design (enclosure + PCB)
+├── desktop.ini                         Windows folder icon (points to assets/icon/folder.ico)
 ├── sunlogo.pretty/                     The generated sun logo footprint
 ├── assets/                             Screenshots, renders, videos, inspiration image
-│   ├── kicad/   fusion/   fusion/renders/   fusion/videos/   readme/
+│   ├── kicad/   fusion/   fusion/renders/   fusion/videos/
 └── export/                             Everything needed to build it
     ├── stl/                            5 print-ready parts
     ├── pcb/                            Gerbers, JLCPCB ZIP, BOM, pick-and-place, schematic PDF
@@ -292,14 +295,17 @@ Everything is in [`export/`](export/README.md): STL files with print settings, P
 
 ## Project history
 
-| Commit | Step |
-|---|---|
-| `db6db27` | PCB by Claude with KiCad |
-| `cf27203` | Manual import of the PCB in Fusion 360 |
-| `0bd1962` | Design inspiration by ChatGPT |
-| `277b937` | 3D design after the first prompt, by Claude with Fusion 360 |
-| `0096e14` | 3D design after two correction prompts |
-| `870d102` | Renders, screenshots, videos and exports, all from a single prompt |
+Every step was committed on November 12, 2026 (UTC+8). The PCB itself was designed in two earlier sessions, on October 17 and November 11.
+
+| Commit | Time | Step |
+|---|---|---|
+| [`db6db27`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/db6db27) | 13:54 | PCB by Claude with KiCad (from two earlier chats) |
+| [`cf27203`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/cf27203) | 14:36 | Manual import of the PCB in Fusion 360 |
+| [`0bd1962`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/0bd1962) | 15:07 | Design inspiration by ChatGPT |
+| [`277b937`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/277b937) | 19:12 | 3D design after the first prompt, by Claude with Fusion 360 |
+| [`0096e14`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/0096e14) | 22:23 | 3D design after two correction prompts |
+| [`870d102`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/870d102) | 23:09 | Renders, screenshots, videos and exports, all from a single prompt |
+| [`e0e7deb`](https://github.com/le-flav-b/claude-x-kicad-x-fusion360/commit/e0e7deb) | 23:43 | This README, written by Claude from the chat exports |
 
 ---
 
